@@ -1,0 +1,14 @@
+# Demo saham - 6 emiten (4 Indonesia + 2 Wall Street)
+# Format: kode emiten tanpa spasi, satu per baris.
+# Komen (#) diabaikan.
+
+# --- Indonesia ---
+BBCA.JK
+BMRI.JK
+TLKM.JK
+ASII.JK
+
+# --- Wall Street (AA / NAS) ---
+AAPL
+MSFT
+GOOGL

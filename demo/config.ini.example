@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+# config.ini - copy ke config.ini (demo Stock Bot)
+# Isi: token/chat_id/smtp sesuai akun kamu.
+# Kamu juga bisa pakai env variabel.
+# ---------------------------------------------------------------------------
+[saham]
+; Daftar emiten (ini demo: watchlist_demo.txt)
+watchlist = demo/watchlist_demo.txt
+
+[telegram]
+; Ganti dengan token ya dari @BotFather
+token =
+chat_id =
+
+[smtp]
+host = smtp.gmail.com
+port = 587
+user =
+pass =
+use_tls = true
+
+[report]
+subject = Laporan Saham {date}
+email_from =
+email_to =
+
+[imap]
+host = imap.gmail.com
+port = 993
+user =
+pass =
+folder = INBOX
+days = 1
