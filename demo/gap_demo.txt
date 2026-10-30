@@ -1,0 +1,40 @@
+# DEMO GAP DATA — Simulasi Penanganan Data Hilang / Tidak Cukup
+
+Target: `sahom-bot` (entry `saham_bot/analysis.analisis`), path repo `sahom-bot`.
+Topik dipicu: gap data (ticker blm punya histori harga / < 50 baris) — BNBR, BWPT,
+sbg. Program harus keluar TIDAK CRASH dengan status `data_tidak_tersedia` dan
+signal `WAIT`, tanpa menampilkan angka palsu. Nama emiten tetap bisa divalidasi
+melalui `ambil_nama_ttl()` (NAMA_MANUAL / NAMA DEFAULT) — bukan merata-rata dari
+Yahoo karena yahoo ngga punya data.
+
+## Langkah coba
+1) Buka `demo/gap_demo.txt` (file ini) — ini adalah deskripsi alur & scenario.
+2) Jalankan kode kecil berikut dari `stock-demo/`:
+     /usr/bin/python3 - <<'PY'
+   import sys; sys.path.insert(0,'.')
+   from saham_bot import analysis
+   for tk in ['BNBR','BWPT','TLKM.JK']:
+       print(analysis.analisis(tk))
+   PY
+3) Output yang diharapkan: `status=data_tidak_tersedia`, indikator None,
+   `rekom="WAIT | Data harga belum tersedia"`, `error` jelas. No traceback.
+
+## Penekanan
+- Jangan manggil `yf.Ticker().history().fillna()` tanpa cek.
+- Hanya tampilkan data kalau `df` valid & >= 50 baris.
+- NAMA fallback: BBRI/BBCA dari NAMA_MANUAL (bukan dari Yahoo emisi yang gak ada).
+
+## Contoh kasus emiten gap
+- BNBR (Bakrie & Brothers) – path: 503.65/8.700%
+- BWPT (Eagle High Plantations) – path: 503.65/8.700%
+- (opsional) ticker yang blm daftar di Binance yahoo: coba `XYZ.JK`
+
+## Catatan
+- `yfinance` sering return `None` / HTTP 404 untuk ticker blm ada histori.
+- Saat gap, HINDARI print angka (harga,RSI,EMA,MACD) yang "ngawur".
+- Output yang valid: `status=data_tidak_tersedia` + `rekom=WAIT | Data harga belum tersedia`.
+
+## Checklist uv (reproduksi)
+- python3 = /usr/bin/python3
+- deps = yfinance, pandas, pandas_ta, colorama
+- run: `cd stock-demo && /usr/bin/python3 demo/run_gap_demo.py` (file yang dilampirkan)

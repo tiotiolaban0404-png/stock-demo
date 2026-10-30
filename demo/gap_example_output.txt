@@ -1,0 +1,82 @@
+====================================================================
+ DEMO GAP DATA — HASIL AKHIR (data_tidak_tersedia / WAIT)
+====================================================================
+Emiten gap (tidak ada histori harga / <50 baris): BNBR, BWPT.
+Program tidak crash; exit 0, semua status: data_tidak_tersedia.
+
+~$ /usr/bin/python3 - <<'PY'
+>>> from saham_bot import analysis
+>>> for t in ['BNBR','BWPT','TLKM.JK']:
+...     print(t, '|', analysis.analisis(t)['rekom'], '| status:', analysis.analisis(t)['status'])
+...
+BNBR | WAIT | Data harga belum tersedia | status: data_tidak_tersedia
+BWPT | WAIT | Data harga belum tersedia | status: data_tidak_tersedia
+TLKM.JK | WAIT | Belum ada sinyal kuat | status: data_tersedia
+~$
+
+====================================================================
+ 1) EMITEN : BNBR  (Bakrie & Brothers)
+   Ticker   : BNBR
+   status   : data_tidak_tersedia
+   nama     : Tidak diketahui
+   rsi      : None
+   ema20    : None
+   ema50    : None
+   macd     : None
+   sig      : None
+   hist     : None
+   cross_up : False
+   cross_down: False
+   near_fibo : False
+   fib      : {}
+   rekom    : WAIT | Data harga belum tersedia
+   error    : Data BNBR tidak cukup / tidak ditemukan.
+   Path     : 503.65/8.700%  (path Yahoo, bukan indikator)
+
+====================================================================
+ 2) EMITEN : BWPT  (Eagle High Plantations)
+   Ticker   : BWPT
+   status   : data_tidak_tersedia
+   nama     : Tidak diketahui
+   rsi      : None
+   ema20    : None
+   ema50    : None
+   macd     : None
+   sig      : None
+   hist     : None
+   cross_up : False
+   cross_down: False
+   near_fibo : False
+   fib      : {}
+   rekom    : WAIT | Data harga belum tersedia
+   error    : Data BWPT tidak cukup / tidak ditemukan.
+   Path     : 503.65/8.700%  (path Yahoo, bukan indikator)
+
+====================================================================
+ 3) EMITEN : TLKM.JK  (kontrol positif — data tersedia)
+   Ticker   : TLKM.JK
+   status   : data_tersedia
+   nama     : Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk
+   sektor   : Communication Services
+   harga    : 1980.0
+   rsi      : 36.92
+   ema20    : 2180.95
+   ema50    : 2333.48
+   macd     : -89.96
+   sig      : -93.50
+   hist     : 3.54
+   cross_up : False
+   cross_down: False
+   near_fibo : False
+   fib      : {0.382: 2498.93, 0.5: 2359.75, 0.618: 2220.57, 0.786: 2022.41}
+   rekom    : WAIT | Belum ada sinyal kuat
+   Path     : 503.65/8.700%
+
+====================================================================
+ SUMMARY — PRINSIP PENTING
+   - Gap data => exit 0, status=data_tidak_tersedia, rekom=WAIT.
+   - JANGAN tampilkan angka (harga/RSI/EMA/MACD) yang "ngawur".
+   - NAMA fallback: BBRI/BBCA via NAMA_MANUAL (bukan Yahoo gak ada).
+   - Pengecekan: df is None / df.empty / len(df) < 50.
+   - Thread: jangan menghentikan pipeline karena gap; teruskan ke emiten berikutnya.
+====================================================================
