@@ -1,7 +1,7 @@
 # Stock Demo
 
 Demo sederhana dari `sahom-bot` (analisis teknikal saham).
-Contoh 6 emiten (4 Indonesia + 2 Wall Street) dengan data riil.
+Contoh 8 emiten (4 Indonesia + 4 Wall Street) dengan data riil.
 
 ## Cepat mulai
 
@@ -25,7 +25,7 @@ Cegah: `saham_env` venv MISSING `colorama` -> jangan dipakai.
 
 | Berkas | Isi |
 | --- | --- |
-| `watchlist_demo.txt` | 6 kode emiten |
+| `watchlist_demo.txt` | 8 kode emiten |
 | `config.ini.example` | template konfigurasi (ubah token/chat_id) |
 | `run_demo.sh` | script jalankan |
 | `example_output.txt` | contoh hasil runs |

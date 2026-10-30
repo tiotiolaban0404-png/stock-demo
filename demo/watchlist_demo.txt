@@ -1,4 +1,4 @@
-# Demo saham - 6 emiten (4 Indonesia + 2 Wall Street)
+# Demo saham - 8 emiten (4 Indonesia + 4 Wall Street)
 # Format: kode emiten tanpa spasi, satu per baris.
 # Komen (#) diabaikan.
 
@@ -11,4 +11,5 @@ ASII.JK
 # --- Wall Street (AA / NAS) ---
 AAPL
 MSFT
+NVDA
 GOOGL

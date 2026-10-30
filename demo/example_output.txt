@@ -90,10 +90,10 @@ STDOUT:
   EMPITEN : AAPL | Apple Inc.
   Sektor  : Technology
 --------------------------------------------------------------
-  Harga    : Rp 345.82
-  RSI14    : 56.91
-  EMA20/50 : 342.36 / 334.36
-  MACD     : 3.88 | Signal 4.03 | Hist -0.15
+  Harga    : Rp 345.39
+  RSI14    : 56.34
+  EMA20/50 : 342.32 / 334.35
+  MACD     : 3.85 | Signal 4.02 | Hist -0.18
   Fibonacci:
     0.382 : 319.62
     0.500 : 309.70
@@ -101,7 +101,7 @@ STDOUT:
     0.786 : 285.65
   Tren     : BULLISH (EMA20 > EMA50)
   Sinyal   : WAIT | Belum ada sinyal kuat
-  Risk     : Stop Loss Rp 328.52 | Target Rp 380.40
+  Risk     : Stop Loss Rp 328.12 | Target Rp 379.92
 
 [33m  Sinyal  : WAIT[0m
 
@@ -111,10 +111,10 @@ STDOUT:
   EMPITEN : MSFT | Microsoft Corporation
   Sektor  : Technology
 --------------------------------------------------------------
-  Harga    : Rp 520.84
-  RSI14    : 48.31
-  EMA20/50 : 526.31 / 509.54
-  MACD     : 4.72 | Signal 7.05 | Hist -2.33
+  Harga    : Rp 521.93
+  RSI14    : 49.05
+  EMA20/50 : 526.41 / 509.58
+  MACD     : 4.80 | Signal 7.06 | Hist -2.26
   Fibonacci:
     0.382 : 473.75
     0.500 : 449.85
@@ -122,9 +122,30 @@ STDOUT:
     0.786 : 391.90
   Tren     : BULLISH (EMA20 > EMA50)
   Sinyal   : WAIT | Belum ada sinyal kuat
-  Risk     : Stop Loss Rp 494.79 | Target Rp 572.92
+  Risk     : Stop Loss Rp 495.83 | Target Rp 574.12
 
 [33m  Sinyal  : WAIT[0m
+
+==============================================================
+
+--------------------------------------------------------------
+  EMPITEN : NVDA | NVIDIA Corporation
+  Sektor  : Technology
+--------------------------------------------------------------
+  Harga    : Rp 203.01
+  RSI14    : 34.01
+  EMA20/50 : 218.02 / 219.63
+  MACD     : -3.77 | Signal -2.19 | Hist -1.59
+  Fibonacci:
+    0.382 : 222.83
+    0.500 : 216.48
+    0.618 : 210.13
+    0.786 : 201.10
+  Tren     : BEARISH (EMA20 < EMA50)
+  Sinyal   : BUY | Oversold
+  Risk     : Stop Loss Rp 192.86 | Target Rp 223.31
+
+[32m  Sinyal  : BELI[0m
 
 ==============================================================
 
@@ -132,7 +153,7 @@ STDOUT:
   EMPITEN : GOOGL | Alphabet Inc.
   Sektor  : Communication Services
 --------------------------------------------------------------
-  Harga    : Rp 279.15
+  Harga    : Rp 279.17
   RSI14    : 21.22
   EMA20/50 : 325.71 / 337.22
   MACD     : -12.29 | Signal -6.02 | Hist -6.27
@@ -143,7 +164,7 @@ STDOUT:
     0.786 : 306.31
   Tren     : BEARISH (EMA20 < EMA50)
   Sinyal   : BUY | Oversold
-  Risk     : Stop Loss Rp 265.19 | Target Rp 307.06
+  Risk     : Stop Loss Rp 265.21 | Target Rp 307.09
 
 [32m  Sinyal  : BELI[0m
 
