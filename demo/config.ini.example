@@ -10,7 +10,19 @@ watchlist = demo/watchlist_demo.txt
 [telegram]
 ; Ganti dengan token ya dari @BotFather
 token =
+
+; Private chat id (satu-satu, dari DM dengan bot)
 chat_id =
+
+; Grup Telegram - satu chat id per baris
+; Cara dapat: tambah bot ke grup, lalu GET https://api.telegram.org/bot<TOKEN>/getUpdates
+; atau cek chat_id di channel group
+group_chat_ids =
+
+; Optional: override semua destinasi (private + groups) -> mengirim langsung ke daftar
+; comma-separated chat ids (private terlebih dahulu, lalu grup)
+; contoh: 7401634640,123456789,987654321
+all_destinations =
 
 [smtp]
 host = smtp.gmail.com

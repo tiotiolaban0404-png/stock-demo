@@ -10,6 +10,6 @@ export TELEGRAM_TOKEN=""
 export TELEGRAM_CHAT_ID=""
 
 # salin config.example -> config.ini (biar enak dijalankan)
-cp config.ini.example config.ini
+cp demo/config.ini.example demo/config.ini
 
 python3 program_saham.py daftar --file demo/watchlist_demo.txt
