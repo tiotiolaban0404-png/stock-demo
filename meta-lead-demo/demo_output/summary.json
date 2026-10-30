@@ -1,0 +1,12 @@
+{
+  "input_rows": 6,
+  "duplicates_removed": 1,
+  "processed_rows": 5,
+  "hot": 2,
+  "nurture": 1,
+  "review": 2,
+  "call_queue": 1,
+  "nurture_queue": 1,
+  "consent_required": 1,
+  "manual_review": 2
+}

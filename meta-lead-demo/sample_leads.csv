@@ -1,0 +1,7 @@
+lead_id,name,phone,email,budget_range,trailer_size,travel_plan,location,preferred_contact,purchase_timeline,contact_consent
+M-1001,Jordan Lee,+1-202-555-0101,jordan@example.com,"$25,000-$35,000",20-24 ft,National parks,Colorado,phone,within 2 months,yes
+M-1002,Casey Morgan,+1-202-555-0102,casey@example.com,"$35,000-$50,000",25-30 ft,Family trips,Utah,email,5 months,yes
+M-1003,Alex Rivera,,alex@example.com,"$20,000-$30,000",18-20 ft,Weekend camping,Oregon,email,not sure,yes
+M-1004,Taylor Reed,+1-202-555-0104,taylor@example.com,"$30,000-$45,000",22-26 ft,National parks,Arizona,phone,1 month,no
+M-1005,Sam Park,+1-202-555-0105,sam@example.com,"$40,000-$55,000",28-32 ft,Cross-country,Texas,phone,3-6 months,yes
+M-1001,Jordan Lee duplicate,+1-202-555-0101,jordan@example.com,"$25,000-$35,000",20-24 ft,National parks,Colorado,phone,within 2 months,yes

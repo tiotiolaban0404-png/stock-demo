@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+*.token
+client_secret*.json
+google_token.json
+lead_output/

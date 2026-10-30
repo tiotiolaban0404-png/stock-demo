@@ -1,0 +1,2 @@
+﻿lead_id,name,phone,email,budget_range,trailer_size,travel_plan,location,preferred_contact,purchase_timeline,contact_consent,lead_status,next_action
+M-1002,Casey Morgan,+1-202-555-0102,casey@example.com,"$35,000-$50,000",25-30 ft,Family trips,Utah,email,5 months,yes,NURTURE,NURTURE_QUEUE
